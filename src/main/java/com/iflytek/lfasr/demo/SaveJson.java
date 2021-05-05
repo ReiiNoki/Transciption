@@ -9,7 +9,7 @@ public class SaveJson {
 
     public void saveDataToFile(String fileName,String data) {
         BufferedWriter writer = null;
-        File file = new File("d:\\output\\"+ fileName + ".json");
+        File file = new File("d:\\output\\"+ fileName + ".json");//需要保存本地请改为自己的包存路径
         //如果文件不存在，则新建一个
         if(!file.exists()){
             try {

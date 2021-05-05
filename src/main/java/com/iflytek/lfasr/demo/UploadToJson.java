@@ -7,6 +7,7 @@ import com.iflytek.msp.lfasr.model.Message;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -15,18 +16,19 @@ import java.util.concurrent.TimeUnit;
  * <p>Date : 2020/4/20 </p>
  *
  * @author : hejie
- * @editer : ReiiNoki
+ * @author : ReiiNoki
  */
 public class UploadToJson {
-    private static final String APP_ID = "32232792";
-    private static final String SECRET_KEY = "8d5c16863c4c2b3c9ec26adfea7b0efc";
+    //请使用自己的讯飞平台实例
+    private static final String APP_ID = "";
+    private static final String SECRET_KEY = "";
 
 
     //音频文件路径
     //1、绝对路径：D:\......\demo-3.0\src\main\resources\audio\lfasr.wav
     //2、相对路径：./resources/audio/lfasr.wav
     //3、通过classpath：
-    private static final String AUDIO_FILE_PATH = UploadToJson.class.getResource("/").getPath()+"/audio/发哥培训.m4a";
+    private static final String AUDIO_FILE_PATH = Objects.requireNonNull(UploadToJson.class.getResource("/")).getPath()+"/audio/lfasr.wav";
 
     /**
      * 注意：同时只能执行一个 示例
