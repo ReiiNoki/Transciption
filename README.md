@@ -1,0 +1,3 @@
+# Transciption
+用讯飞语音转写平台的demo代码做了一些修改，加上了保存本地json和转为带时间轴的txt功能
+
