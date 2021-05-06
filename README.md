@@ -19,3 +19,5 @@ AUDIO_FILE_PATH的导入音频路径设置为自己的本地文件路径+文件�
 ### VoiceRecord.java
 这两个是将上面从讯飞平台得到的json转为看得懂的txty用
 同样请修改第一个文件里的保存路径后运行JsonToTxt.main即可得到对应的txt
+
+PS:log4j的warning我一直都解决不了不影响使用我也懒得弄了，有大佬愿意帮我解决的话十分感谢
